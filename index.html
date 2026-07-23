@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>重大事故隐患按条款统计分析</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:-apple-system,"Microsoft YaHei",sans-serif;margin:0;background:#f5f7fa;color:#1f2733;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding:28px 22px 60px}
+h1{font-size:24px;margin:0 0 4px}
+.sub{color:#6b7785;font-size:13px;margin-bottom:20px}
+.kpi{display:flex;gap:14px;margin:18px 0 26px;flex-wrap:wrap}
+.kpi .c{flex:1;min-width:140px;background:#fff;border-radius:12px;padding:16px 18px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.kpi .n{font-size:28px;font-weight:700;color:#1a5fd0}
+.kpi .l{font-size:12px;color:#6b7785}
+.sec{background:#fff;border-radius:14px;padding:22px 24px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.sec h2{font-size:17px;margin:0 0 16px;border-left:4px solid #1a5fd0;padding-left:10px}
+.bar-row{display:flex;align-items:center;margin:9px 0;gap:10px}
+.bar-label{width:190px;font-size:13px;text-align:right;color:#34404f;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-track{flex:1;background:#eef1f5;border-radius:6px;position:relative;height:26px;display:flex;align-items:center}
+.bar-fill{height:100%;border-radius:6px;min-width:2px}
+.bar-val{position:absolute;right:8px;font-size:12px;color:#1f2733;font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:13px}
+.summary thead th{background:#1a5fd0;color:#fff;padding:9px 10px;text-align:left;font-weight:600}
+.summary td,.summary th{border-bottom:1px solid #eef1f5;padding:8px 10px}
+.summary .num{text-align:right;font-variant-numeric:tabular-nums}
+.summary .nm{font-weight:600}
+.mini{background:#eef1f5;border-radius:4px;height:12px;width:100%}
+.mini-f{height:100%;border-radius:4px}
+.art-block{border:1px solid #e8ecf1;border-radius:10px;margin:12px 0;overflow:hidden}
+.art-head{background:#f8fafc;padding:10px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.art-no{background:#1a5fd0;color:#fff;font-size:12px;padding:2px 8px;border-radius:5px;font-weight:600}
+.art-name{font-weight:700;font-size:14px}
+.art-sum{margin-left:auto;color:#6b7785;font-size:12px}
+.cl-tbl{width:100%;font-size:13px}
+.cl-tbl th{background:#f0f3f7;color:#4a5663;padding:7px 12px;text-align:left;font-weight:600}
+.cl-tbl td{padding:7px 12px;border-top:1px solid #f0f3f7}
+.cl-tbl .cl{color:#1a5fd0;font-weight:600;white-space:nowrap;width:90px}
+.cl-tbl .ct{text-align:center;font-weight:700;width:50px}
+.cl-tbl .pc{text-align:center;color:#6b7785;width:60px}
+.cl-tbl .at{font-size:12px;color:#4a5663;line-height:1.5;max-width:420px}
+.note{font-size:12px;color:#6b7785;margin-top:10px}
+ul.find li{margin:6px 0;font-size:14px}
+.hl{color:#c0392b}
+</style></head>
+<body><div class="wrap">
+<h1>省级暗访建筑施工重大事故隐患 · 按《判定标准》（2024）条款统计分析</h1>
+<div class="sub">数据来源：附件2《排查整治期间省级暗访发现建筑施工重大事故隐患数量统计表》 ｜ 合计 183 起 ｜ 统计维度：条（合并同条各款）→ 款</div>
+
+<div class="kpi">
+  <div class="c"><div class="n">183</div><div class="l">隐患总数（起）</div></div>
+  <div class="c"><div class="n">13</div><div class="l">涉及本标准条款（条）</div></div>
+  <div class="c"><div class="n">128</div><div class="l">前4类（管理/有限空间/脚手架/高处）合计起数</div></div>
+  <div class="c"><div class="n">70%</div><div class="l">前4类占总量比重</div></div>
+</div>
+
+<div class="sec">
+  <h2>一、各"条"占比排行（同一条下各款已合并，更能客观反映问题领域）</h2>
+  <div class="bar-row">
+      <div class="bar-label" title="第4条·施工安全管理">第4条·施工安全管理</div>
+      <div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#4F90D1"></div>
+      <span class="bar-val">48 起 · 26.2%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第11条·有限空间作业">第11条·有限空间作业</div>
+      <div class="bar-track"><div class="bar-fill" style="width:64.6%;background:#4FA7D1"></div>
+      <span class="bar-val">31 起 · 16.9%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第7条·脚手架工程">第7条·脚手架工程</div>
+      <div class="bar-track"><div class="bar-fill" style="width:54.2%;background:#4FBED1"></div>
+      <span class="bar-val">26 起 · 14.2%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第9条·高处作业">第9条·高处作业</div>
+      <div class="bar-track"><div class="bar-fill" style="width:47.9%;background:#4FD1CC"></div>
+      <span class="bar-val">23 起 · 12.6%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第14条·施工临时堆载">第14条·施工临时堆载</div>
+      <div class="bar-track"><div class="bar-fill" style="width:20.8%;background:#4FD1B5"></div>
+      <span class="bar-val">10 起 · 5.5%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第15条·冒险作业">第15条·冒险作业</div>
+      <div class="bar-track"><div class="bar-fill" style="width:20.8%;background:#4FD19E"></div>
+      <span class="bar-val">10 起 · 5.5%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第10条·施工临时用电">第10条·施工临时用电</div>
+      <div class="bar-track"><div class="bar-fill" style="width:16.7%;background:#4FD187"></div>
+      <span class="bar-val">8 起 · 4.4%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第12条·拆除工程">第12条·拆除工程</div>
+      <div class="bar-track"><div class="bar-fill" style="width:16.7%;background:#4FD16F"></div>
+      <span class="bar-val">8 起 · 4.4%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第5条·基坑、边坡工程">第5条·基坑、边坡工程</div>
+      <div class="bar-track"><div class="bar-fill" style="width:10.4%;background:#4FD158"></div>
+      <span class="bar-val">5 起 · 2.7%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第8条·建筑起重机械及吊装工程">第8条·建筑起重机械及吊装工程</div>
+      <div class="bar-track"><div class="bar-fill" style="width:8.3%;background:#5DD14F"></div>
+      <span class="bar-val">4 起 · 2.2%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第17条·其他严重违反法律法规及强制性标准的现实危险">第17条·其他严重违反法律法规及强制性标准的现实危险</div>
+      <div class="bar-track"><div class="bar-fill" style="width:8.3%;background:#74D14F"></div>
+      <span class="bar-val">4 起 · 2.2%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第6条·模板工程及支撑体系">第6条·模板工程及支撑体系</div>
+      <div class="bar-track"><div class="bar-fill" style="width:6.2%;background:#8BD14F"></div>
+      <span class="bar-val">3 起 · 1.6%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="第16条·使用国家明令禁止和限制使用的施工工艺、设备和材料">第16条·使用国家明令禁止和限制使用的施工工艺、设备和材料</div>
+      <div class="bar-track"><div class="bar-fill" style="width:4.2%;background:#A2D14F"></div>
+      <span class="bar-val">2 起 · 1.1%</span></div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label" title="其他法规（非本标准）">其他法规（非本标准）</div>
+      <div class="bar-track"><div class="bar-fill" style="width:2.1%;background:#B9D14F"></div>
+      <span class="bar-val">1 起 · 0.5%</span></div>
+    </div>
+  <div class="note">说明：图中"条"为《判定标准》（2024）的条文（如第四条=施工安全管理）；同一"条"下不同"款"的起数已累加。这样可避免"有限空间（第十一条）含4款被拆散、看不出整体占比"的问题。</div>
+</div>
+
+<div class="sec">
+  <h2>二、条 → 款 明细（合并后逐款拆解）</h2>
+  <div class="art-block">
+      <div class="art-head"><span class="art-no">第4条</span>
+        <span class="art-name">施工安全管理</span>
+        <span class="art-sum">合计 48 起 · 占总量 26.2%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">第（二）款</td>
+          <td class="ds">安管人员未足额配备或无证</td>
+          <td class="ct">9</td>
+          <td class="pc">19%</td>
+          <td class="at">联合体各方须单独足额配专职安管，C1与C3不可交叉替代；安管人员须到岗履职并留存记录，不得仅备案而无实质到场。</td>
+        </tr><tr>
+          <td class="cl">第（三）款</td>
+          <td class="ds">特种作业人员无证上岗</td>
+          <td class="ct">16</td>
+          <td class="pc">33%</td>
+          <td class="at">架子工、司索工、信号工须持有效特种证书，证书过期属高频问题；非专业人员临时指挥汽车吊或从事司索属无证上岗。</td>
+        </tr><tr>
+          <td class="cl">第（四）款</td>
+          <td class="ds">危大工程未编审/论证专项方案</td>
+          <td class="ct">17</td>
+          <td class="pc">35%</td>
+          <td class="at">脚手架、用电方案须附图纸（缺图即缺陷）；悬挑架反力须设计书面复核（口头答复无效）；移动操作平台、井道防护架也须编方案；超限梁模板支撑须专家论证。</td>
+        </tr><tr>
+          <td class="cl">第（五）款</td>
+          <td class="ds">危大工程未验收合格即进入下道工序</td>
+          <td class="ct">6</td>
+          <td class="pc">12%</td>
+          <td class="at">登高平台、卸料平台须验收合格后方可投用，不得先用后补；连墙件与方案不符即使架体验收亦属无效。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第11条</span>
+        <span class="art-name">有限空间作业</span>
+        <span class="art-sum">合计 31 起 · 占总量 16.9%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">第（一）款</td>
+          <td class="ds">未辨识有限空间且未设警示标志</td>
+          <td class="ct">11</td>
+          <td class="pc">35%</td>
+          <td class="at">肥槽、人防扩散室、消防水池出入口等非典型有限空间最易漏辨识；辨识后须设警示标志并封闭出入口，不得仅口头告知。</td>
+        </tr><tr>
+          <td class="cl">第（二）款</td>
+          <td class="ds">未履行审批/培训/"先通风再检测后作业"</td>
+          <td class="ct">9</td>
+          <td class="pc">29%</td>
+          <td class="at">须配泵吸式检测仪，审批表须填写实测数据（无数据视同未检测）；须专项安全教育培训，不得以通用教育代替。</td>
+        </tr><tr>
+          <td class="cl">第（三）款</td>
+          <td class="ds">无专人监护/无专职安管现场监督</td>
+          <td class="ct">2</td>
+          <td class="pc">6%</td>
+          <td class="at">须安排专人全程监护并填写看护记录；深基坑、塔吊安拆期间也须看护。</td>
+        </tr><tr>
+          <td class="cl">第（四）款</td>
+          <td class="ds">未配备气体检测、通风、防护、救援设备</td>
+          <td class="ct">9</td>
+          <td class="pc">29%</td>
+          <td class="at">须配泵吸式检测仪、正压式呼吸机、通风设备及备用电源且作业时在场到位，不得仅以采购台账代替。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第7条</span>
+        <span class="art-name">脚手架工程</span>
+        <span class="art-sum">合计 26 起 · 占总量 14.2%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">第（一）款</td>
+          <td class="ds">脚手架基础承载力和变形不满足设计</td>
+          <td class="ct">7</td>
+          <td class="pc">27%</td>
+          <td class="at">悬挑工字钢放阳台的固定段长度须≥1.25倍悬挑长（须实测复核）；计算书须覆盖全部楼栋；基坑开挖不得掏空立杆基础，架体周边须设排水沟。</td>
+        </tr><tr>
+          <td class="cl">第（二）款</td>
+          <td class="ds">连墙件未设置或整层缺失</td>
+          <td class="ct">19</td>
+          <td class="pc">73%</td>
+          <td class="at">首步连墙件整层缺失为最普遍通病，验收应逐跨必检；斜道、电梯井架、屋面侧墙连墙件极易遗漏；高层三层以上整层无拉结须纳入日常巡查。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第9条</span>
+        <span class="art-name">高处作业</span>
+        <span class="art-sum">合计 23 起 · 占总量 12.6%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">第（三）款</td>
+          <td class="ds">悬挑卸料平台搁置/拉结/支撑点未可靠连接</td>
+          <td class="ct">1</td>
+          <td class="pc">4%</td>
+          <td class="at">卸料平台须设限载牌；拉结钢索锈蚀及保险环齐备情况为容易忽视的检查项。</td>
+        </tr><tr>
+          <td class="cl">第（四）款</td>
+          <td class="ds">脚手架与结构间/电梯井道贯通未水平防护</td>
+          <td class="ct">22</td>
+          <td class="pc">96%</td>
+          <td class="at">外架与结构间贯通须逐层铺设水平防护网（通病）；电梯井多层贯通须逐层封闭。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第14条</span>
+        <span class="art-name">施工临时堆载</span>
+        <span class="art-sum">合计 10 起 · 占总量 5.5%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">第（一）款</td>
+          <td class="ds">基坑周边堆载超过设计允许值</td>
+          <td class="ct">3</td>
+          <td class="pc">30%</td>
+          <td class="at">基坑边堆放大重钢筋、散装水泥罐属常见习惯性问题，须对照设计允许值核查。</td>
+        </tr><tr>
+          <td class="cl">第（二）款</td>
+          <td class="ds">无支护基坑周边堆载</td>
+          <td class="ct">1</td>
+          <td class="pc">10%</td>
+          <td class="at">无支护基坑周边坑底边线范围内不得堆载。</td>
+        </tr><tr>
+          <td class="cl">第（三）款</td>
+          <td class="ds">楼板、屋面等结构/脚手架堆载超设计</td>
+          <td class="ct">6</td>
+          <td class="pc">60%</td>
+          <td class="at">楼面、屋面、外架悬挑板上堆放袋装水泥等超设计荷载极其普遍；叉车等重型机械上楼面须核算含自重与额定起重量之和的承载力。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第15条</span>
+        <span class="art-name">冒险作业</span>
+        <span class="art-sum">合计 10 起 · 占总量 5.5%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">第（一）款</td>
+          <td class="ds">大型机械未校核运行路线/承载能力</td>
+          <td class="ct">9</td>
+          <td class="pc">90%</td>
+          <td class="at">泵车、汽车吊、打桩机进场作业前须校核行驶路线及作业位置承载力并留存验算材料——此项"无法提供核验资料"的比例最高。</td>
+        </tr><tr>
+          <td class="cl">第（三）款</td>
+          <td class="ds">非载人设备吊运人员</td>
+          <td class="ct">1</td>
+          <td class="pc">10%</td>
+          <td class="at">严禁使用汽车吊等非载人设备悬挂吊篮吊运人员。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第10条</span>
+        <span class="art-name">施工临时用电</span>
+        <span class="art-sum">合计 8 起 · 占总量 4.4%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">第（一）款</td>
+          <td class="ds">特殊作业环境照明未用安全电压</td>
+          <td class="ct">7</td>
+          <td class="pc">88%</td>
+          <td class="at">地下室积水等潮湿环境下落地灯具须采用安全电压，不得使用220V。</td>
+        </tr><tr>
+          <td class="cl">第（二）款</td>
+          <td class="ds">与外电架空线路安全距离不符合</td>
+          <td class="ct">1</td>
+          <td class="pc">12%</td>
+          <td class="at">—</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第12条</span>
+        <span class="art-name">拆除工程</span>
+        <span class="art-sum">合计 8 起 · 占总量 4.4%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">第（二）款</td>
+          <td class="ds">拆除作业顺序不符合规范/方案</td>
+          <td class="ct">8</td>
+          <td class="pc">100%</td>
+          <td class="at">模板支撑先行拆除而模板仍悬空未拆属拆除工序通病；架体拆除须自上而下逐层，严禁自底部向上整片一次性拆除。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第5条</span>
+        <span class="art-name">基坑、边坡工程</span>
+        <span class="art-sum">合计 5 起 · 占总量 2.7%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">第（一）款</td>
+          <td class="ds">未对毗邻建(构)筑物等采取专项防护</td>
+          <td class="ct">2</td>
+          <td class="pc">40%</td>
+          <td class="at">基坑周边河道、地下管线、邻近建构筑物须逐一排查落实防护，且严格按图纸实施。</td>
+        </tr><tr>
+          <td class="cl">第（四）款</td>
+          <td class="ds">支护/周边建筑变形超控制值未处理</td>
+          <td class="ct">3</td>
+          <td class="pc">60%</td>
+          <td class="at">监测数据超方案控制值即构成隐患，不待系统报警；钢支撑焊缝须做无损检测并出具报告。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第8条</span>
+        <span class="art-name">建筑起重机械及吊装工程</span>
+        <span class="art-sum">合计 4 起 · 占总量 2.2%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">第（一）款</td>
+          <td class="ds">起重机械未验收合格即投入使用</td>
+          <td class="ct">1</td>
+          <td class="pc">25%</td>
+          <td class="at">塔吊须悬挂验收牌、留存完整验收资料，未经验收不得投入使用。</td>
+        </tr><tr>
+          <td class="cl">第（四）款</td>
+          <td class="ds">安全装置不齐全、失效或违规拆除</td>
+          <td class="ct">2</td>
+          <td class="pc">50%</td>
+          <td class="at">回转限位、上限位及冲顶保护日常巡检易漏检，须专项测试。</td>
+        </tr><tr>
+          <td class="cl">第（五）款</td>
+          <td class="ds">主要受力构件缺陷/连接件缺失</td>
+          <td class="ct">1</td>
+          <td class="pc">25%</td>
+          <td class="at">附着杆对接焊缝、主弦杆与横腹杆连接焊缝须逐处检查裂纹，每道附着必查。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第17条</span>
+        <span class="art-name">其他严重违反法律法规及强制性标准的现实危险</span>
+        <span class="art-sum">合计 4 起 · 占总量 2.2%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">（整条）</td>
+          <td class="ds">其他严重违反法律法规及强制性标准的现实危险</td>
+          <td class="ct">4</td>
+          <td class="pc">100%</td>
+          <td class="at">临时宿舍板材进场须核查防火等级，严禁可燃泡沫夹芯板搭建。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第6条</span>
+        <span class="art-name">模板工程及支撑体系</span>
+        <span class="art-sum">合计 3 起 · 占总量 1.6%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">第（一）款</td>
+          <td class="ds">模板支架基础承载力和变形不满足设计</td>
+          <td class="ct">2</td>
+          <td class="pc">67%</td>
+          <td class="at">立杆须支承于硬化地面或可靠基础，严禁杂木代钢管；扫地杆、水平杆、剪刀撑须按方案逐道设置。</td>
+        </tr><tr>
+          <td class="cl">第（二）款</td>
+          <td class="ds">模板支架施工荷载超过设计值</td>
+          <td class="ct">1</td>
+          <td class="pc">33%</td>
+          <td class="at">钢筋加工机械及成堆箍筋不得放置于支模架上，实际荷载超设计值的情况极其普遍但极少核算。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">第16条</span>
+        <span class="art-name">使用国家明令禁止和限制使用的施工工艺、设备和材料</span>
+        <span class="art-sum">合计 2 起 · 占总量 1.1%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">（整条）</td>
+          <td class="ds">使用明令禁止/限制使用的工艺、设备、材料</td>
+          <td class="ct">2</td>
+          <td class="pc">100%</td>
+          <td class="at">高支模大面积一次性飞模拆除属限制使用工艺，须采用分段拆除工序。</td>
+        </tr></tbody></table>
+    </div>
+<div class="art-block">
+      <div class="art-head"><span class="art-no">其他</span>
+        <span class="art-name">其他法规（非本标准）</span>
+        <span class="art-sum">合计 1 起 · 占总量 0.5%</span></div>
+      <table class="cl-tbl"><thead><tr><th>款</th><th>隐患内容（款概述）</th><th>起数</th><th>占本条</th><th>特别注意（易忽略）</th></tr></thead>
+      <tbody><tr>
+          <td class="cl">（整条）</td>
+          <td class="ds">消防法第十九条</td>
+          <td class="ct">1</td>
+          <td class="pc">100%</td>
+          <td class="at">生产、储存、经营场所不得与居住场所设于同一建筑物内，各功能区之间须设防火门分隔。</td>
+        </tr></tbody></table>
+    </div>
+</div>
+
+<div class="sec">
+  <h2>三、核心结论</h2>
+  <ul class="find">
+    <li><b>第4条 施工安全管理</b>：共 48 起，占总量 <b>26.2%</b></li><li><b>第11条 有限空间作业</b>：共 31 起，占总量 <b>16.9%</b></li><li><b>第7条 脚手架工程</b>：共 26 起，占总量 <b>14.2%</b></li>
+    <li><b>管理类隐患最突出</b>：第四条"施工安全管理"以 <span class="hl">48 起（26.2%）</span> 居首，其中"危大工程方案缺失/未论证"（17 起）与"特种作业人员无证上岗"（16 起）是管理短板的两大主因。</li>
+    <li><b>有限空间（第十一条）合并后达 31 起（16.9%）</b>，含4款，并非单一问题，应作为专项治理重点。</li>
+    <li><b>脚手架（第七条 14.2%）与高处作业（第九条 12.6%）</b>集中于"连墙件缺失""水平防护缺失"等可直观排查的实体隐患，可通过现场标准化整改快速压降。</li>
+  </ul>
+  <div class="note">注：第28条隐患判定依据为《消防法》第十九条，未纳入《判定标准》条文统计（单独列为"其他法规"）。隧道工程（第十三条）本次暗访未发现问题。</div>
+</div>
+</div></body></html>
